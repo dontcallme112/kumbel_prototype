@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f6fa;
+            color: #2f3640;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #ffffff;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #6c7cff;
+        }
+
+        .logo span {
+            width: 35px;
+            height: 35px;
+            background: #6c7cff;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #2f3640;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #6c7cff;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #6c7cff, #8e9cff);
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2f3640;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #6c7cff;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <span>E</span>
+        E-Commerce App
+    </div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О проекте</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#help">Помощь</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>Добро пожаловать в E-Commerce App</h1>
+    <p>Удобный интернет-магазин для современных пользователей</p>
+</div>
+
+<section id="about">
+    <h2>О проекте</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Надёжность</h3>
+            <p>Стабильная работа и защита пользовательских данных.</p>
+        </div>
+        <div class="card">
+            <h3>Удобство</h3>
+            <p>Интуитивный интерфейс и простая навигация.</p>
+        </div>
+        <div class="card">
+            <h3>Скорость</h3>
+            <p>Быстрый доступ ко всем разделам магазина.</p>
+        </div>
+    </div>
+</section>
+
+<section id="catalog">
+    <h2>Основные разделы</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Каталог товаров</h3>
+            <p>Просмотр и выбор товаров.</p>
+        </div>
+        <div class="card">
+            <h3>Корзина</h3>
+            <p>Управление выбранными покупками.</p>
+        </div>
+        <div class="card">
+            <h3>Личный кабинет</h3>
+            <p>История заказов и настройки профиля.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contacts">
+    <h2>Контакты</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Email</h3>
+            <p>support@ecommerce.kz</p>
+        </div>
+        <div class="card">
+            <h3>Телефон</h3>
+            <p>+7 (777) 123-45-67</p>
+        </div>
+        <div class="card">
+            <h3>Поддержка</h3>
+            <p>Круглосуточно</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 E-Commerce App. Все права защищены
+</footer>
+
+</body>
+</html>

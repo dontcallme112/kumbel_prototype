@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация и CMS</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            color: #333;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            padding: 40px 20px;
+        }
+
+        /* ===== ФОРМА АВТОРИЗАЦИИ ===== */
+        .login-form {
+            background: #ffffff;
+            padding: 30px;
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background: #3b82f6;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background: #2563eb;
+        }
+
+        .login-form a {
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #3b82f6;
+        }
+
+        .cms-list {
+            background: #ffffff;
+            padding: 30px;
+            width: 420px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .cms-list h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        li img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        li a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #333;
+        }
+
+        li a:hover {
+            color: #3b82f6;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+
+    <!-- ЗАДАНИЕ №1 -->
+    <div class="login-form">
+        <h2>Авторизация</h2>
+
+        <input type="text" placeholder="Логин или Email">
+        <input type="password" placeholder="Пароль">
+
+        <button>Войти</button>
+        <a href="#">Забыли пароль?</a>
+    </div>
+
+    <!-- ЗАДАНИЕ №2 -->
+    <div class="cms-list">
+        <h2>Популярные CMS</h2>
+
+        <ul>
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="WordPress">
+                <a href="#">WordPress</a>
+            </li>
+
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Joomla">
+                <a href="#">Joomla</a>
+            </li>
+
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Drupal">
+                <a href="#">Drupal</a>
+            </li>
+
+            <li>
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="Magento">
+                <a href="#">Magento</a>
+            </li>
+        </ul>
+    </div>
+
+</main>
+</body>
+</html>

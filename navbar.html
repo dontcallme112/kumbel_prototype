@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная | Web Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: #1f2933;
+            color: #fff;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: #1f2933;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">MyWebProject</div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Добро пожаловать на наш сайт</h1>
+    <p>
+        Это главная страница веб-проекта с удобной навигацией,
+        единым стилем оформления и логичной структурой контента.
+    </p>
+</section>
+
+<main>
+    <div class="card">
+        <h2>Раздел 1</h2>
+        <p>
+            Краткое описание первого раздела проекта.
+            Здесь размещается основная информация.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Раздел 2</h2>
+        <p>
+            Информация о возможностях, услугах или функционале сайта.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Раздел 3</h2>
+        <p>
+            Дополнительные материалы, новости или полезные ссылки.
+        </p>
+    </div>
+</main>
+
+<footer>
+    © 2026 · Главная страница веб-проекта
+</footer>
+
+</body>
+</html>

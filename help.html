@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Раздел помощи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f5f6fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .help-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1e272e;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #0a3d62;
+        }
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #3c6382;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .help-container {
+                padding: 25px;
+            }
+        }
+
+        .faq {
+            max-width: 800px;
+            margin: 40px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 18px 10px;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-question:hover {
+            color: #6c7cff;
+        }
+
+        .icon {
+            font-size: 22px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 10px;
+            color: #555;
+            line-height: 1.6;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 10px;
+        }
+
+        .faq-item.active .icon {
+            transform: rotate(45deg); /* + превращается в × */
+        }
+    </style>
+</head>
+<body>
+
+<div class="help-container">
+    <h1>Раздел «Помощь»</h1>
+
+    <div class="section">
+        <h2>1. Назначение сайта</h2>
+        <p>
+            Данный веб-сайт предназначен для предоставления пользователям удобного доступа
+            к информации и функциональным возможностям проекта в онлайн-формате.
+        </p>
+        <p>
+            Сайт ориентирован на конечного пользователя и разработан с акцентом на простоту,
+            понятную навигацию и удобство использования.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>2. Справочная информация</h2>
+
+        <h3>Основные разделы сайта</h3>
+        <ul>
+            <li><strong>Главная страница</strong> — основная информация и быстрый доступ к функциям.</li>
+            <li><strong>О проекте</strong> — сведения о компании или сервисе.</li>
+            <li><strong>Услуги</strong> — перечень доступных возможностей сайта.</li>
+            <li><strong>Контакты</strong> — способы связи и форма обратной связи.</li>
+            <li><strong>Помощь</strong> — инструкции и ответы на вопросы.</li>
+        </ul>
+
+        <h3>Элементы интерфейса</h3>
+        <ul>
+            <li>Навигационное меню для перехода по страницам</li>
+            <li>Кнопки для выполнения действий</li>
+            <li>Формы ввода данных</li>
+            <li>Иконки и визуальные подсказки</li>
+        </ul>
+
+        <h3>Типовые действия пользователя</h3>
+        <ul>
+            <li>Просмотр информации через меню сайта</li>
+            <li>Заполнение и отправка форм</li>
+            <li>Связь с администрацией сайта</li>
+        </ul>
+    </div>
+
+    <div class="faq">
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Для чего предназначен сайт?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+                Сайт предназначен для предоставления информации, онлайн-сервисов и удобного взаимодействия пользователей с платформой.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Нужно ли регистрироваться?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+                Регистрация не обязательна, но она даёт доступ к расширенному функционалу и истории действий.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Можно ли пользоваться сайтом с телефона?
+                <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+                Да, сайт полностью адаптирован под мобильные устройства и планшеты.
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025. Раздел помощи веб-проекта
+    </footer>
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

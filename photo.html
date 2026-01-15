@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-фильтры для изображений</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        figure {
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            transition: filter 0.6s ease, transform 0.6s ease;
+        }
+
+        figcaption {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        /*ФИЛЬТРЫ*/
+
+        .grayscale img {
+            filter: grayscale(100%);
+        }
+        .grayscale img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05); 
+        }
+
+        .blur img {
+            filter: blur(3px);
+        }
+        .blur img:hover {
+            filter: blur(0);
+            transform: scale(1.05);
+        }
+
+        .sepia img {
+            filter: sepia(100%);
+        }
+        .sepia img:hover {
+            filter: sepia(0);
+            transform: scale(1.05);
+        }
+
+        .brightness img {
+            filter: brightness(60%);
+        }
+        .brightness img:hover {
+            filter: brightness(100%);
+            transform: scale(1.05);
+        }
+
+        .hue img {
+            filter: hue-rotate(120deg);
+        }
+        .hue img:hover {
+            filter: hue-rotate(0deg);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+<main>
+
+    <div class="gallery">
+
+        <figure class="grayscale">
+            <img src="https://picsum.photos/400/300?random=1" alt="Grayscale">
+            <figcaption>Фильтр grayscale — чёрно-белое изображение</figcaption>
+        </figure>
+
+        <figure class="blur">
+            <img src="https://picsum.photos/400/300?random=2" alt="Blur">
+            <figcaption>Фильтр blur — размытие</figcaption>
+        </figure>
+
+        <figure class="sepia">
+            <img src="https://picsum.photos/400/300?random=3" alt="Sepia">
+            <figcaption>Фильтр sepia — эффект старой фотографии</figcaption>
+        </figure>
+
+        <figure class="brightness">
+            <img src="https://picsum.photos/400/300?random=4" alt="Brightness">
+            <figcaption>Фильтр brightness — затемнение</figcaption>
+        </figure>
+
+        <figure class="hue">
+            <img src="https://picsum.photos/400/300?random=5" alt="Hue rotate">
+            <figcaption>Фильтр hue-rotate — смена оттенка</figcaption>
+        </figure>
+
+    </div>
+
+</main>
+</body>
+</html>

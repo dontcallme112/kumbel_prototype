@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #ffb3b3;
+    text-align: center;
+    padding: 30px;
+    font-size: 24px;
+}
+
+nav {
+    background: #4b0066;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #6a008a;
+}
+
+.content {
+    display: flex;
+    min-height: 400px;
+}
+
+aside {
+    width: 25%;
+    background: #1fb35f;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    width: 75%;
+    background: #8c8c8c;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
+
+footer {
+    background: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+</style>
+<body>
+
+<header>
+    Шапка сайта
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <aside>
+        Левый сайдбар
+    </aside>
+
+    <main>
+        Основная часть
+    </main>
+</div>
+
+<footer>
+    Подвал
+</footer>
+
+</body>
+</html>
