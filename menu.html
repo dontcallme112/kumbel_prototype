@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню кафе</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .section-block {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .section-block h2 {
+            margin-top: 0;
+        }
+
+        .item-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        figure {
+            width: 250px;
+            margin: 0;
+            background: #fafafa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        figure img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <!-- Раздел: Горячие блюда -->
+        <div class="section-block">
+            <h2>Горячие блюда</h2>
+
+            <div class="item-grid">
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Паста" alt="Паста карбонара">
+                    <figcaption>Паста карбонара — 3500 ₸</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Стейк" alt="Стейк">
+                    <figcaption>Стейк из говядины — 6800 ₸</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Суп" alt="Суп">
+                    <figcaption>Сливочный суп — 2900 ₸</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Раздел: Напитки -->
+        <div class="section-block">
+            <h2>Напитки</h2>
+
+            <div class="item-grid">
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Кофе" alt="Кофе">
+                    <figcaption>Капучино — 1200 ₸</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Чай" alt="Чай">
+                    <figcaption>Чёрный чай — 700 ₸</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Лимонад" alt="Лимонад">
+                    <figcaption>Домашний лимонад — 1500 ₸</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Раздел: Десерты -->
+        <div class="section-block">
+            <h2>Десерты</h2>
+
+            <div class="item-grid">
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Торт" alt="Торт">
+                    <figcaption>Медовик — 1600 ₸</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Эклер" alt="Эклер">
+                    <figcaption>Эклер ванильный — 900 ₸</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="https://via.placeholder.com/300x200?text=Чизкейк" alt="Чизкейк">
+                    <figcaption>Чизкейк — 1800 ₸</figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

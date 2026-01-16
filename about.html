@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Резюме — Иванова Мария</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        color: #222;
+    }
+    main{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* --- Увеличенный хедер --- */
+    .header{
+        display: flex;
+        gap: 24px;          /* больше расстояние */
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .photo{
+        width: 160px;       /* было 120 */
+        height: 160px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+    }
+    h1{
+        margin: 0;
+        font-size: 1.9rem;  /* крупнее */
+        font-weight: bold;
+    }
+    .header p{
+        font-size: 1.1rem;  /* текст под именем больше */
+        margin-top: 6px;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+    th, td{
+        padding: 8px;
+        vertical-align: top;
+    }
+    th{
+        text-align: left;
+        background: #f3f3f3;
+        width: 30%;
+    }
+    td{
+        border-bottom: 1px solid #eee;
+    }
+    .section-title{
+        font-weight: 600;
+        margin: 8px 0 4px;
+    }
+    p{
+        margin: 6px 0;
+        line-height: 1.4;
+    }
+</style>
+</head>
+
+<body>
+<main>
+
+<div class="header">
+    <img src="https://via.placeholder.com/160" class="photo" alt="Фото">
+    <div>
+        <h1>Иванова Мария</h1>
+        <p>Бариста • Студентка • г. Алматы</p>
+    </div>
+</div>
+
+<table>
+    <tr>
+        <th>Личная информация</th>
+        <th>Обо мне / Опыт</th>
+    </tr>
+
+    <tr>
+        <td>
+            <p><b>Имя:</b> Мария Иванова</p>
+            <p><b>Возраст:</b> 17</p>
+            <p><b>Город:</b> Алматы</p>
+            <p><b>Телефон:</b> +7 (7ХХ) ХХХ-ХХ-ХХ</p>
+            <p><b>Email:</b> maria@example.com</p>
+            <p><b>Языки:</b> Русский, Казахский, Английский баз.</p>
+        </td>
+
+        <td>
+            <p class="section-title">Обо мне</p>
+            <p>Ответственная, коммуникабельная, быстро обучаюсь, люблю работать с людьми и создавать уютную атмосферу.</p>
+
+            <p class="section-title">Опыт</p>
+            <p><b>Кафе «Уют»</b> (июнь–август 2024)<br>
+            Обслуживание гостей, приготовление напитков, поддержание чистоты.</p>
+
+            <p class="section-title">Образование</p>
+            <p>Школа №12, 11 класс (выпуск 2026)</p>
+
+            <p class="section-title">Навыки</p>
+            <p>Клиентский сервис, аккуратность, базовые навыки бариста, работа в команде.</p>
+
+            <p class="section-title">Дополнительно</p>
+            <p>Готовность к гибкому графику, желание развиваться в бариста-сфере.</p>
+        </td>
+    </tr>
+</table>
+
+<p style="margin-top:14px;">
+    <small>Портфолио / соцсети: <a href="#">/profile</a></small>
+</p>
+
+</main>
+</body>
+</html>
